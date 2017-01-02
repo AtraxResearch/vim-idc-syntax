@@ -172,7 +172,7 @@ syn keyword idcStdFunction	SegAddrng SegDefReg Comment RptCmt MakeByte MakeWord
 syn keyword idcStdFunction	MakeDword MakeQword MakeOword MakeYword MakeFloat
 syn keyword idcStdFunction	MakeDouble MakePackReal MakeTbyte MakeCustomData SetReg
 
-hi def link idcFunction idcStdFunction
+hi def link idcStdFunction idcFunction
 
 " Operators
 syn match idcOperator	"\(<<\|>>\|[-+*/%&^|<>!=]\)="
@@ -197,7 +197,7 @@ syn keyword idcBoolean true false TRUE FALSE
 
 
 " Links
-hi def link idcFunction Function
+hi def link idcFunction Statement
 hi def link idcIdentifier Identifier
 hi def link idcDelimiter Delimiter
 " foldmethod=syntax fix, courtesy of Ivan Freitas
